@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<style>
+		.container 
+		{
+			width: 40%;
+			border: 1px solid green;
+			margin: auto;
+			padding: 20px;
+			font-size: 18px;
+	
+		}
+		
+		#form table
+		{
+			font-size: 18px;
+		}
+	
+	</style>
+
+	<div class="container">
+		
+		<h1>My Registration Form</h1>
+		
+		<form id="form" action="RegistrationServlet" method="post">
+			<table>
+				<tr>
+					<td>Enter your Name: </td>
+					<td><input type="text" name="user_name" placeholder="Enter here"/></td>
+				</tr>
+				
+				<tr>
+					<td>Enter your Password: </td>
+					<td><input type="password" name="user_password" placeholder="Enter here"/></td>
+				</tr>	
+				
+				<tr>
+					<td>Enter you Email Id: </td>
+					<td><input type="email" name="user_email" placeholder="Enter here"/></td>
+				</tr>
+				
+				<tr>
+					<td>Enter you Gender: </td>
+					<td><input type="radio" name="user_gender" value="male"/>Male &nbsp; &nbsp; 
+					<input type="radio" name="user_gender" value="female"/>Female</td>
+				</tr>
+				
+				<tr>
+					<td>Select TimeZone: </td>
+					<td>
+						<select name="user_timezone">
+							<option value="Mumbai">Mumbai</option>
+							<option value="Delhi">Delhi</option>
+							<option value="Kolkata">Kolkata</option>
+							<option value="Chennai">Chennai</option>
+						</select>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>Agree Terms and Conditions.</td>
+					
+					<td>
+					<input type="checkbox" name="checkbox" value="checked"/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+					
+					</td>
+					
+					<td>
+						<button type="submit">Submit</button>
+						<button type="reset">Reset</button>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	
+</body>
+</html>
